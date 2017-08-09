@@ -17,8 +17,8 @@ import registerServiceWorker from './registerServiceWorker';
 import './assets/css/global.css';
 
 //--Pages
-import App from './components/App'
-// import App from './components/home/App';
+import Home from './components/home/Home';
+import App from './components/home/App';
 import About from './components/about/About';
 
 let store = createStore(todoApp);
@@ -27,7 +27,9 @@ ReactDOM.render(
 	<Provider store={store}>
 		<Router>
 			<div>
-				<Route exact path="/" component={App} />
+				<Route exact path="/" component={Home} />
+				<Route path="/home" component={Home} />
+				<Route path="/app" component={App} />
 				<Route path="/about" component={About} />
 			</div>
 		</Router>
@@ -35,5 +37,3 @@ ReactDOM.render(
 	document.getElementById('root')
 );
 registerServiceWorker();
-
-			// <Route path="/about" component={About} />
