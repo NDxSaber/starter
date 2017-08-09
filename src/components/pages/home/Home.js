@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import './home.css';
 
 //--Fixed Assets
-import headerLogo from '../../assets/images/logo.png';
-import optionHouse from '../../assets/images/option-house.jpg';
-import optionLand from '../../assets/images/option-land.jpg';
-import photoProfile from '../../assets/images/profile.png';
+import headerLogo from '../../../assets/images/logo.png';
+import optionHouse from '../../../assets/images/option-house.jpg';
+import optionLand from '../../../assets/images/option-land.jpg';
+import photoProfile from '../../../assets/images/profile.png';
 
 
 class Home extends Component {
