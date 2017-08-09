@@ -1,19 +1,19 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "microservices";
-  src:url("../fonts/microservices.eot");
-  src:url("../fonts/microservices.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/microservices.woff") format("woff"),
-    url("../fonts/microservices.ttf") format("truetype"),
-    url("../fonts/microservices.svg#microservices") format("svg");
+  font-family: "myicon";
+  src:url("../fonts/myicon.eot");
+  src:url("../fonts/myicon.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/myicon.woff") format("woff"),
+    url("../fonts/myicon.ttf") format("truetype"),
+    url("../fonts/myicon.svg#myicon") format("svg");
   font-weight: normal;
   font-style: normal;
 
 }
 
 [data-icon]:before {
-  font-family: "microservices" !important;
+  font-family: "myicon" !important;
   content: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;
@@ -27,7 +27,7 @@
 
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-  font-family: "microservices" !important;
+  font-family: "myicon" !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
@@ -38,201 +38,39 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-flight:before {
-  content: "\f3";
+.icon-facebook:before {
+  content: "\61";
 }
-.icon-breakfast:before {
-  content: "\f6";
+.icon-twitter:before {
+  content: "\62";
 }
-.icon-baggage:before {
-  content: "\f2";
+.icon-instagram:before {
+  content: "\63";
 }
-.icon-flight-landing:before {
-  content: "\f8";
+.icon-envelope:before {
+  content: "\64";
 }
-.icon-flight-takeoff:before {
-  content: "\f7";
+.icon-phone:before {
+  content: "\65";
 }
-.icon-terminal:before {
-  content: "\f1";
-}
-.icon-hotel:before {
-  content: "\b2";
-}
-.icon-ac:before {
-  content: "\b1";
-}
-.icon-cafe:before {
-  content: "\b7";
-}
-.icon-parkir:before {
-  content: "\b3";
-}
-.icon-pool:before {
-  content: "\b6";
-}
-.icon-star-blank:before {
-  content: "\a58";
-}
-.icon-star-full:before {
-  content: "\a59";
-}
-.icon-star-half:before {
-  content: "\a57";
-}
-.icon-wifi:before {
-  content: "\b8";
-}
-.icon-train:before {
-  content: "\d1";
-}
-.icon-train-departure:before {
-  content: "\d2";
-}
-.icon-train-return:before {
-  content: "\d3";
-}
-.icon-car:before {
-  content: "\c1";
-}
-.icon-baggage-1:before {
-  content: "\c2";
-}
-.icon-seat:before {
-  content: "\a24";
-}
-.icon-snack:before {
-  content: "\c4";
-}
-.icon-event:before {
-  content: "\e1";
-}
-.icon-event-form:before {
-  content: "\e2";
-}
-.icon-ticket:before {
-  content: "\e3";
-}
-.icon-calendar:before {
-  content: "\a6";
-}
-.icon-call:before {
-  content: "\a8";
-}
-.icon-cart:before {
-  content: "\a4";
-}
-.icon-coffee:before {
-  content: "\a78";
-}
-.icon-delete:before {
-  content: "\a5";
-}
-.icon-delete-round:before {
-  content: "\a89";
-}
-.icon-filter:before {
-  content: "\a34";
-}
-.icon-notification:before {
-  content: "\a43";
-}
-.icon-mytix:before {
-  content: "\a66";
-}
-.icon-mytiket:before {
-  content: "\a65";
-}
-.icon-map:before {
-  content: "\a29";
-}
-.icon-mail:before {
-  content: "\a12";
-}
-.icon-location:before {
-  content: "\a25";
-}
-.icon-lastminute:before {
-  content: "\b5";
-}
-.icon-home:before {
-  content: "\a2";
-}
-.icon-gift-voucher:before {
-  content: "\a9";
-}
-.icon-price-down:before {
-  content: "\a30";
-}
-.icon-price-high:before {
-  content: "\a31";
-}
-.icon-recommend:before {
-  content: "\a28";
+.icon-whatsapp:before {
+  content: "\66";
 }
 .icon-search:before {
-  content: "\a3";
+  content: "\67";
 }
-.icon-security:before {
-  content: "\a7";
+.icon-arrow-left:before {
+  content: "\68";
 }
-.icon-sort:before {
-  content: "\a42";
+.icon-arrow-right:before {
+  content: "\69";
 }
-.icon-tiket-point:before {
-  content: "\a1";
+.icon-left-open-big:before {
+  content: "\6a";
 }
-.icon-timer:before {
-  content: "\a23";
+.icon-right-open-big:before {
+  content: "\6b";
 }
-.icon-warning:before {
-  content: "\a50";
-}
-.icon-up:before {
-  content: "\a26";
-}
-.icon-down:before {
-  content: "\a17";
-}
-.icon-back-arrow:before {
-  content: "\a16";
-}
-.icon-forward:before {
-  content: "\a15";
-}
-.icon-upward:before {
-  content: "\a90";
-}
-.icon-downwards:before {
-  content: "\a99";
-}
-.icon-back:before {
-  content: "\a10";
-}
-.icon-next:before {
-  content: "\a11";
-}
-.icon-minus:before {
-  content: "\a18";
-}
-.icon-cancel:before {
-  content: "\a20";
-}
-.icon-plus:before {
-  content: "\a19";
-}
-.icon-tick:before {
-  content: "\a21";
-}
-.icon-choose:before {
-  content: "\a38";
-}
-.icon-no-choose:before {
-  content: "\a39";
-}
-.icon-pointer:before {
-  content: "\c5";
-}
-.icon-edit:before {
-  content: "\c6";
+.icon-menu:before {
+  content: "\6c";
 }

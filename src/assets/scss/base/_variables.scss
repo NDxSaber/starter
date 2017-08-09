@@ -1,16 +1,24 @@
-$grey-background:			#f7f7f7;
-$text-header:					#222;
+//--Fonts
+$font-family-main:				"SamsungSans-Regular", Sans-serif;
+$font-family-main-bold:			"SamsungSans-Medium", Sans-serif;
 
-$font-family-regular:	'SamsungSans-Regular', Arial;
-$font-family-medium:	'SamsungSans-Medium', Arial;
+
 
 //--Colors
-$color-orange:              #ff7200 !default;
-$color-blue:				#00599F !default;
-$color-green:				#8cd931 !default;
-$color-red:					#f20000 !default;
-$color-yellow:				#fdcb04 !default;
-$color-white:				#ffffff !default;
+$color-primary-dark:   			#1976D2 !default;
+$color-primary:        			#2196F3 !default;
+$color-primary-light:  			#BBDEFB !default;
+$color-primary-text:   			#FFFFFF !default;
+
+$color-accent:         			#FF9800 !default;
+$color-primary-text:   			#212121 !default;
+$color-secondary-text: 			#757575 !default;
+$color-divider:        			#BDBDBD !default;
+
+$color-facebook:				#3C5998 !default;
+$color-twitter:					#29A9E0 !default;
+$color-instagram:				#0F537A !default;
+$color-whatsapp:				#0CB757 !default;
 
 $color-grey:				#dddddd !default;
 $color-grey-darker:			#888888 !default;
@@ -18,11 +26,6 @@ $color-grey-darkest:		#222222 !default;
 $color-grey-lighter:		#f7f7f7 !default;
 $color-grey-lightest:		#ffffff !default;
 
-
-//--Checkbox Size
-$checkbox-primary-width:			17px;
-$checkbox-primary-height:			17px;
-$checkbox-primary-border-radius:	4px;
-$page-header-height:		50px;
-$package-filter-height:		34px;
-$general-filter-height: 	35px;
+$color-red:						#F44336 !default;
+$color-white:					#FFFFFF !default;
+$color-green:					#388E3C !default;

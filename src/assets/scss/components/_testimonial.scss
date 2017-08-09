@@ -1,0 +1,41 @@
+.testimonial {
+	background: $color-grey-lighter;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	text-align: center;
+	
+	h2 {
+		margin: 0;
+		margin-bottom: 40px;
+		font-size: 30px;
+	}
+
+	img {
+		border-radius: 50%;
+		width: 110px;
+		margin-bottom: 20px;
+		border: 2px solid $color-green;
+	}
+	
+	.text {
+		margin-bottom: 16px;
+		font-size: 14px;
+		color: $color-grey;
+		line-height: 24px;
+	}
+
+	.name {
+		margin-bottom: 7px;
+		font-size: 18px;
+		color: $color-grey-dark;
+	}
+
+	.title {
+		font-size: 14px;
+		color: $color-green;
+	}
+}
+
+@media all and (max-width: 640px){
+
+}

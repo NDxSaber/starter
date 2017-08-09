@@ -1,0 +1,25 @@
+.sub-footer {
+	padding: 40px 0;
+	
+	.part {
+		>h3 {
+			margin:0;
+			margin-bottom: 20px;
+			font-size: 30px;
+			color: $color-grey-dark;
+			font-weight: 700px;
+		}
+	}
+}
+
+@media all and (max-width: 640px){
+.sub-footer {
+	.part {
+		margin-bottom: 40px;
+		
+		>h3 {
+		}
+	}
+}
+
+}
