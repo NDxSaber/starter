@@ -18,6 +18,7 @@ import './assets/css/global.css';
 
 //--Pages
 import Home from './components/home/Home';
+import List from './components/list/List';
 import App from './components/home/App';
 import About from './components/about/About';
 
@@ -29,6 +30,7 @@ ReactDOM.render(
 			<div>
 				<Route exact path="/" component={Home} />
 				<Route path="/home" component={Home} />
+				<Route path="/list/rumah" component={List} />
 				<Route path="/app" component={App} />
 				<Route path="/about" component={About} />
 			</div>

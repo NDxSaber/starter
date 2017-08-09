@@ -7,6 +7,7 @@ import './home.css';
 import headerLogo from '../../assets/images/logo.png';
 import optionHouse from '../../assets/images/option-house.jpg';
 import optionLand from '../../assets/images/option-land.jpg';
+import photoProfile from '../../assets/images/profile.png';
 
 
 class Home extends Component {
@@ -20,16 +21,16 @@ class Home extends Component {
 					<div className="container">
 						<h2>Apa Yang Anda Cari?</h2>
 						<div className="option">
-							<a href="list.html" title="">
+							<Link to="/list/rumah">
 								<img src={optionHouse} />
 								<div className="layer"><span>RUMAH</span></div>
-							</a>
+							</Link>
 						</div>
 						<div className="option">
-							<a href="list.html" title="">
+							<Link to="/list/rumah">
 								<img src={optionLand} />
 								<div className="layer"><span>TANAH</span></div>
-							</a>
+							</Link>
 						</div>
 					</div>
 				</section>
@@ -39,7 +40,7 @@ class Home extends Component {
 						<div className="option clearfix">
 							<a href="#" title="">
 								<div className="profile-picture">
-									<img src="../assets/images/profile.png" />
+									<img src={photoProfile} />
 								</div>
 								<div className="profile-data">
 									<div className="name">Ester Dewi</div>
