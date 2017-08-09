@@ -1,0 +1,52 @@
+.rated {
+    padding-top: 2px;
+    font-size: 12px;
+    color: $color-grey;
+
+    .icon-star-full{
+        color: #fdcb04;
+    }
+    .icon-star-half{
+        color: #fdcb04;
+    }
+}
+
+.rating-clickable {
+    padding-top: 15px;
+    display: inline-block;
+    text-align: center;
+
+    > input { display: none; }
+
+    > input + label {
+        position: relative;
+        float:right;
+        width:35px;
+        margin:0 5px;
+        font-size: 35px;
+        color: $color-grey;
+
+        &:before {
+            content: '\a58';
+            font-family: "microservices";
+        }
+
+        &:active {
+            position:relative;
+            top:2px;
+            left:2px;
+        }
+    }
+
+    > input:checked ~ label {
+        color: $color-yellow;
+
+        &:hover,
+        &:hover ~ label {
+            color: $color-yellow;            
+        }
+        &:before {
+            content: '\a59';
+        }
+    }
+}

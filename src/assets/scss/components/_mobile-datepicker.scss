@@ -1,0 +1,204 @@
+$datepicker-sprite: url(../images/mobile-datepicker-sprite.png);
+$holiday-color: #fe3838;
+
+.filter {
+    margin-bottom: 0;
+}
+
+.tiket-mobile-datepicker {
+    display: none;
+    position: fixed;
+    background: #ffffff;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    .tiket-mobile-datepicker-title {
+        width: 100%;
+        height: 55px;
+        padding: 13px 15px;
+        background: #00609a;
+        color: #fff;
+        font-family: "SamsungSans-Regular", arial, helvetica, sans-serif;
+        font-size: 16pt;
+        box-sizing: border-box;
+        .tiket-mobile-datepicker-title-content {
+            line-height: 25px;
+        }
+        .tiket-mobile-datepicker-title-close {
+            text-decoration: none;
+            color: #fff;
+            float: right;
+            font-size: 36px;
+            font-weight: 900;
+            line-height: 25px;
+        }
+    }
+    .tiket-mobile-datepicker-content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        background: #fff;
+        overflow: auto;
+        box-sizing: border-box;
+        .ui-widget {
+            font-family: "SamsungSans-Regular", arial, helvetica, sans-serif;
+            font-size: 12pt;
+            width: 100%;
+            padding: 30px 10px;
+            border: none;
+            box-sizing: border-box;
+            @include set-box-shadow(none);
+            @include set-border-radius(none);
+            .ui-widget-header {
+                background: none;
+                color: #767676;
+                border: none;
+                font-weight: normal;
+                width: 100%;
+                height: 60px;
+                margin: auto;
+                .ui-datepicker-title {
+                    line-height: 30px;
+                    font-size: 16pt;
+                    text-align: center;
+                }
+                .ui-datepicker-next-hover {
+                    right: 2px;
+                    top: 2px;
+                }
+                .ui-datepicker-prev-hover {
+                    left: 2px;
+                    top: 2px;
+                }
+
+                .ui-datepicker-prev,
+                .ui-datepicker-next {
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    cursor: pointer;
+                    background-repeat: no-repeat;
+                    line-height: 600%;
+                    overflow: hidden;
+                }
+
+                .ui-datepicker-prev {
+                    float: left;
+                    background-position: center -30px;
+                }
+                .ui-datepicker-next {
+                    float: right;
+                    background-position: center 0px;
+                }
+                .ui-icon {
+                    &.ui-icon-circle-triangle-w {
+                        @include set-sprite-crop($datepicker-sprite,0,0,13px,18px);
+                    }
+                    &.ui-icon-circle-triangle-e {
+                        @include set-sprite-crop($datepicker-sprite,13px,0,13px,18px);
+                        content: "\f192";
+                        color: #ff7015;
+                    }
+                }
+            }
+
+            .ui-datepicker-calendar {
+                text-align: center;
+                margin: 0 auto 15px auto;
+                width: 90%;
+                border-bottom: 1px solid #ededed;
+                th,
+                td {
+                    border: 0;
+                    text-align: center;
+                    font-size: 15px;
+                    padding: 10px 0;
+                }
+                th {
+                    font-size: 12px;
+                    line-height: 30px;
+                    color: #888;
+                    text-transform: uppercase;
+                    border-bottom: 1px solid #ededed;
+                    padding: 0;
+                }
+                a {
+                    text-decoration: none;
+                    color: #333;
+                    display: block;
+                    line-height: 32px;
+                    border-radius: 32px;
+                    -moz-border-radius: 32px;
+                    -webkit-border-radius: 32px;
+                    &:hover {
+                        background-color: #ff7015;
+                        color: #fff;
+                    }
+                }
+
+                td,
+                th {
+                    &:first-child {
+                        color: $holiday-color;
+                        a {
+                            color: $holiday-color;
+                        }
+                    }
+                    &.holiday {
+                        a {
+                            color: $holiday-color;
+                        }
+                    }
+                    &.ui-datepicker-other-month {
+                        a {
+                            color: #c5c5c6;
+                        }
+                        &.holiday {
+                            a {
+                                color: #ff0000;
+                            }
+                        }
+                    }
+                    &.ui-datepicker-unselectable {
+                        color: #ddd;
+                    }
+                    .ui-priority-secondary {
+                        opacity: 1;
+                        filter: Alpha(Opacity=100);
+                    }
+                }
+
+                .ui-state-active:after {
+                    content: ".";
+                    color: #ff7015;
+                    font-size: 40px;
+                    display: block;
+                    text-align: center;
+                    line-height: 0;
+                }
+            }
+        }
+        .tiket-mobile-datepicker-holidays {
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 25px;
+            padding: 0 15px;
+            div {
+                font-size: 9pt;
+                span {
+                    width: 40px;
+                    display: inline-block;
+                    background: #e91a1a;
+                    color: #fff;
+                    padding: 5px 15px;
+                    margin-bottom: 3px;
+                    margin-right: 10px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

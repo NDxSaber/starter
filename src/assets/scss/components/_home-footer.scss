@@ -1,0 +1,43 @@
+.home-footer {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: center;
+
+    .secure-payment-list {
+        > div {
+            display: inline-block;
+            margin-right: 8px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.footer-header {
+    color: #222;
+    margin-bottom: 19px;
+}
+
+.footer-socmed {
+    margin-top: 18px;
+    padding-top: 21px;
+    border-top: 1px solid #ddd;
+
+    > ul {
+        list-style: none;
+
+        > li {
+            display: inline-block;
+            margin-right: 3px;
+            margin-left: 3px;
+        }
+    }
+}
+
+.footer-copyright {
+    margin-top: 13px;
+    margin-bottom: 24px;
+    font-size: 12px;
+}

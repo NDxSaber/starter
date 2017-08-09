@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* fonts */
+@font-face {
+	font-family: "SamsungSans-Medium";
+	src:url("../fonts/SamsungSans-Medium.eot");
+	src:url("../fonts/SamsungSans-Medium.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/SamsungSans-Medium.woff") format("woff"),
+		url("../fonts/SamsungSans-Medium.ttf") format("truetype"),
+		url("../fonts/SamsungSans-Medium.svg#SamsungSans-Medium") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SamsungSans-Regular";
+	src:url("../fonts/SamsungSans-Regular.eot");
+	src:url("../fonts/SamsungSans-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/SamsungSans-Regular.woff") format("woff"),
+		url("../fonts/SamsungSans-Regular.ttf") format("truetype"),
+		url("../fonts/SamsungSans-Regular.svg#SamsungSans-Regular") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}

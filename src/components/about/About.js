@@ -1,26 +1,31 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
-import logo from './logo.svg';
-import './App.css';
+import { Link } from 'react-router-dom';
+import logo from '../../assets/image/logo.svg';
+import './About.css';
 
-class App extends Component {
+class About extends Component {
 	render() {
 		return (
 			<div className="App">
 				<Helmet>
-					<title>My Title</title>
+					<title>About Page</title>
 					<meta name="description" content="Helmet application" />
 				</Helmet>
 				<div className="App-header">
 					<img src={logo} className="App-logo" alt="logo" />
 					<h2>React</h2>
 				</div>
+				<ul>
+					<li><Link to="/">Home</Link></li>
+					<li><Link to="/about">About</Link></li>
+				</ul>
 				<p className="App-intro">
-					Too get started, edit <code>src/App.js</code> and save to reload.
+					About Page
 				</p>
 			</div>
 		);
 	}
 }
 
-export default App;
+export default About;

@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import './index.css';
-import App from './App';
-import About from './About';
+import './assets/css/global.css';
+import App from './components/home/App';
+import About from './components/about/About';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(

@@ -1,0 +1,244 @@
+.tiket-mobile-datepicker .tiket-mobile-datepicker-content .ui-widget .ui-datepicker-calendar a{
+	width:28px;
+	height:28px;
+	display:inline-block;
+}
+
+.tiket-mobile-datepicker .tiket-mobile-datepicker-content .ui-datepicker.ui-widget {
+	padding: 0;
+
+	.ui-datepicker-header {
+		padding: 10px 0 0;
+		height: auto;
+
+		.ui-datepicker-prev,
+		.ui-datepicker-next {
+			padding-top: 7px;
+			line-height: 2;
+			position: relative;
+			width: 68px;
+			font-size: 10px;
+			text-transform: uppercase;
+
+			&:before {
+				position: absolute;
+				font-family: 'microservices';
+				font-size: 11px;
+				top: 6px;
+				width: 15px;
+				height: 100%;
+				color: $color-orange;
+			}
+		}
+
+		.ui-datepicker-next:before {
+			content: '\a15';
+			right: 7px;
+		}
+		.ui-datepicker-prev:before {
+			content: '\a16';
+			left: 7px;
+		}
+		.ui-datepicker-next .ui-icon.ui-icon-circle-triangle-e,
+		.ui-datepicker-prev .ui-icon.ui-icon-circle-triangle-w {
+			background: none;
+			content: none;
+			width: auto;
+			color: $color-grey-darker;
+		}
+
+	}
+
+	.ui-datepicker-month,
+	.ui-datepicker-year {
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $color-grey-darkest;
+	}
+
+	.ui-datepicker-calendar {
+		width: 100%;
+		margin: 0;
+
+		tbody {
+			background: #f7f7f7;
+		    border: 15px solid transparent;
+		}
+	}
+
+	.ui-state-default {
+		font-size: 14px;
+		line-height: 28px;
+		margin: 0 auto;
+	}
+
+	.ui-state-active {
+		position: relative;
+		color: #fff;
+		z-index: 1;
+
+		&:after {
+			position: absolute;
+			content: none;
+			border: 1px solid $color-orange;
+			border-radius: 50%;
+			background: $color-orange;
+		    top: 46%;
+    		left: 50%;
+			width: 28px;
+			height: 28px;
+			transform: translate(-50%, -50%);
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.22);
+			z-index: -1;
+		}
+	}
+
+	.holiday{
+		&.ui-state-disabled{
+			.ui-state-default:before{
+				top:0px;
+			}
+		}
+
+		&.ui-datepicker-other-month .ui-state-default {
+			color: $color-grey;
+
+			&:before {
+				content: none;
+			}
+		}
+
+		.ui-state-default {
+			color: #333;
+			position: relative;
+
+			&:before {
+				position: absolute;
+				content: '.';
+				font-size: 50px;
+				top: 10px;
+				left: 0;
+				width: 100%;
+				height: auto;
+				color: #f20000;
+				z-index: 10;
+			}
+		}
+
+		.ui-state-active{
+			color:#fff;
+
+			&:before{
+				padding-top:30px;
+				top:-20px;
+				left:0px;
+				z-index:-1;
+			}
+		}
+	}
+
+	.tiket-mobile-datepicker-holidays > div {
+		margin-left: 20px;
+		position: relative;
+		color: $color-grey-darker;
+
+		&:before {
+			position: absolute;
+		    content: '.';
+		    font-size: 50px;
+		    top: -3px;
+    		left: -19px;
+		    width: 20px;
+		    height: 10px;
+		    line-height: 0;
+		    color: #f20000;
+		}
+	}
+
+	.tiket-mobile-datepicker-holidays > div > span {
+		color: inherit;
+		width: auto;
+		background: transparent;
+		position: relative;
+		margin-right: 15px;
+
+		&:after {
+			position: absolute;
+			content: '-';
+			top: 4px;
+			right: -19px;
+			width: 20px;
+			height: inherit;
+		}
+	}
+}
+
+.ui-datepicker-today .ui-state-default {
+	color: $color-orange;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		content: ' ';
+		top: 46%;
+		left: 50%;
+		width: 28px;
+		height: 28px;
+		transform: translate(-50%, -50%);
+		border: 1px solid $color-orange;
+		border-radius: 50%;
+		z-index: 10;
+	}
+}
+
+.tiket-mobile-datepicker .tiket-mobile-datepicker-title {
+	height: 55px !important;
+	padding-left: 35px !important;
+	font-size: 16px !important;
+
+	.tiket-mobile-datepicker-title-close {
+		display: inline-block;
+		position: relative;
+		font-size: 16px !important;
+		color: transparent !important;
+		float: none !important;
+
+		&:after {
+			position: absolute;
+			content: '\a10';
+			font-family: "microservices";
+			font-size: 16px;
+			color: $color-white;
+			top: 0;
+			left: -18px;
+			width: auto;
+			height: auto;
+		}
+	}
+}
+
+body .tiket-mobile-datepicker .tiket-mobile-datepicker-content .ui-widget .ui-datepicker-calendar td:first-child,
+body .tiket-mobile-datepicker .tiket-mobile-datepicker-content .ui-widget .ui-datepicker-calendar td:first-child a{
+	color: #333;
+}
+body .tiket-mobile-datepicker .tiket-mobile-datepicker-content .ui-widget .ui-datepicker-calendar th:first-child,
+body .tiket-mobile-datepicker .tiket-mobile-datepicker-content .ui-widget .ui-datepicker-calendar th:first-child a{
+	color: #888;
+}
+body .tiket-mobile-datepicker .tiket-mobile-datepicker-content .ui-widget .ui-datepicker-calendar td.ui-datepicker-unselectable,
+body .tiket-mobile-datepicker .tiket-mobile-datepicker-content .ui-widget .ui-datepicker-calendar th.ui-datepicker-unselectable,
+body .tiket-mobile-datepicker .tiket-mobile-datepicker-content .ui-datepicker.ui-widget .ui-state-disabled.holiday .ui-state-default{
+	color: #ddd;
+}
+body .tiket-mobile-datepicker .tiket-mobile-datepicker-content .ui-widget .ui-datepicker-calendar td.ui-datepicker-other-month a,
+body .tiket-mobile-datepicker .tiket-mobile-datepicker-content .ui-widget .ui-datepicker-calendar th.ui-datepicker-other-month a{
+	color: #c5c5c6;
+}
+
+.tiket-mobile-datepicker .tiket-mobile-datepicker-content .ui-widget .ui-datepicker-calendar td:last-child,
+.tiket-mobile-datepicker .tiket-mobile-datepicker-content .ui-widget .ui-datepicker-calendar td:last-child a,
+.tiket-mobile-datepicker .tiket-mobile-datepicker-content .ui-widget .ui-datepicker-calendar th:last-child,
+.tiket-mobile-datepicker .tiket-mobile-datepicker-content .ui-widget .ui-datepicker-calendar th:last-child a{
+	color: #fe3838;
+}

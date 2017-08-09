@@ -1,0 +1,64 @@
+//--Vendors
+@import 'vendors/jqm-datebox-1.4.5.min';
+@import 'vendors/jquery.mobile-1.4.5.min';
+@import 'vendors/slick-theme';
+@import 'vendors/slick';
+@import 'vendors/swiper';
+
+//--Base
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/fonts';
+@import 'base/icon';
+@import 'base/reset-custom';
+@import 'base/utils';
+@import 'base/functions';
+
+//--Animation
+@import 'animation/animation';
+
+//--UI-Kit
+@import 'ui-kit/buttons';
+@import 'ui-kit/checkbox';
+@import 'ui-kit/radio';
+@import 'ui-kit/ratings';
+
+//--Global Components
+@import 'components/popup';
+
+//--Components
+@import 'components/datepicker';
+@import 'components/detail-contents';
+@import 'components/detail-slider-popup';
+@import 'components/detail-slider';
+@import 'components/detail-summary';
+@import 'components/detail-tabs';
+@import 'components/download-apps';
+@import 'components/filter-general';
+@import 'components/filter-package';
+@import 'components/footer-menu-main';
+@import 'components/form-booking-car';
+@import 'components/give-review';
+@import 'components/header';
+@import 'components/home-banner';
+@import 'components/home-footer';
+@import 'components/home-form-car';
+@import 'components/home-search-form';
+@import 'components/image-slider';
+@import 'components/link-all-promo';
+@import 'components/message';
+@import 'components/menu-main';
+@import 'components/menu-setting';
+@import 'components/mobile-datepicker';
+@import 'components/my-tiket';
+@import 'components/rating';
+@import 'components/search-autocomplete-city';
+@import 'components/search-car';
+@import 'components/search-result';
+@import 'components/sprite-home';
+@import 'components/tab-detail';
+@import 'components/tab-review';
+@import 'components/timeflippicker';
+@import 'components/promo-page';
+@import 'components/promo-tag';
+@import 'components/data-not-found';

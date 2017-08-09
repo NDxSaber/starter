@@ -1,0 +1,33 @@
+.result-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 100%;
+    &.loading {
+        background-image: url('../images/ajax-loader.gif');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &.has-header {
+        padding-top: $page-header-height;
+    }
+    &.has-header-filter {
+        padding-top: ($page-header-height + $package-filter-height);
+    }
+    &.has-footer {
+        padding-bottom: $general-filter-height;
+    }
+
+    .result-list {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .loading-bottom {
+        display: block;
+        background: url('../images/ajax-loader.gif') center no-repeat;
+        width: 100%;
+        height: 40px;
+    }
+}

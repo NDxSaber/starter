@@ -1,0 +1,53 @@
+@mixin set-sprite-crop($sprite,$crop-left,$crop-top,$width,$height){
+	width:$width;
+	height:$height;
+	$crop-left:-$crop-left;
+	$crop-top:-$crop-top;
+	background: $sprite no-repeat $crop-left $crop-top;
+	display: inline-block;
+}
+
+@mixin set-border-radius($radius){
+	-webkit-border-radius:$radius;
+	-moz-border-radius:$radius;
+	-ms-border-radius:$radius;
+	-o-border-radius:$radius;
+	border-radius:$radius;
+}
+
+@mixin set-box-shadow($shadow-prop){
+	-moz-box-shadow: $shadow-prop;
+	-webkit-box-shadow: $shadow-prop;
+	-khtml-box-shadow: $shadow-prop;
+	box-shadow: $shadow-prop;
+}
+
+@mixin set-button($background-normal,$background-hover,$border-color){
+	background:$background-normal !important;	
+	border-bottom-color:$border-color !important;
+	&:hover{
+		background:$background-hover !important;
+	}
+	&:active{
+		background:$background-hover !important;
+		border-top-color:$border-color !important;
+		border-bottom-color:transparent !important;
+	}
+}
+
+@mixin set-button-image($sprite,$crop-left,$crop-top,$width,$height){
+	padding-left:48px;
+	i{
+		@include set-sprite-crop($sprite,$crop-left,$crop-top,$width,$height);
+		display:block;
+		position:absolute;
+		margin-left:-20px;
+		margin-top:-3px;
+	}
+}
+
+@mixin set-alpha($alpha){
+	opacity:$alpha;
+	$alpha:$alpha*100;
+	filter:alpha(opacity=$alpha);
+}

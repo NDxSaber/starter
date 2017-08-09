@@ -1,0 +1,53 @@
+.promo-tag {
+	span {
+	  	float: left;
+			position: relative;
+			width: auto;
+			height: 18px;
+			padding: 0 6px;
+			line-height: 18px;
+			background: #ec1c24;
+			color: #fff;
+			font-size: 10px;
+			font-weight: 600;
+			text-decoration: none;		
+	}
+
+	span{
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;		
+			width: 0;
+			height: 0;		
+			border-style: solid;		
+		}
+	
+		&:after {
+			content: "";
+			position: absolute;
+			top: 7px;
+			width: 4px;
+			height: 4px;
+			-moz-border-radius: 4px;
+			-webkit-border-radius: 4px;
+			border-radius: 4px;
+			background: #fff;
+		}
+	}	
+	
+	.post-tag{
+		span{
+			&:before {		
+				right: -9px;	
+				border-color: transparent transparent transparent #ec1c24;
+				border-width: 9px 0 9px 9px;
+			}
+	
+			&:after {		
+				right: -3px;
+			}
+		}
+	}
+}
+	
