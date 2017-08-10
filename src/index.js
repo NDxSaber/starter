@@ -17,10 +17,7 @@ import registerServiceWorker from './registerServiceWorker';
 import './assets/css/global.css';
 
 //--Pages
-import Home from './components/pages/home/Home';
-import List from './components/pages/list/List';
 import Todo from './components/pages/todo/Todo';
-import About from './components/pages/about/About';
 
 let store = createStore(todoApp);
 
@@ -28,12 +25,7 @@ ReactDOM.render(
 	<Provider store={store}>
 		<Router>
 			<div>
-				<Route exact path="/" component={Home} />
-				<Route path="/home" component={Home} />
-				<Route path="/list/rumah" component={List} />
-				<Route path="/detail" component={List} />
-				<Route path="/todo" component={Todo} />
-				<Route path="/about" component={About} />
+				<Route exact path="/" component={Todo} />
 			</div>
 		</Router>
 	</Provider>,
