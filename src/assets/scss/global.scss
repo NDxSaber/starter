@@ -5,3 +5,18 @@
 @import 'base/reset';
 @import 'base/base'; 
 @import 'base/helper';
+
+
+//--Component 
+@import 'components/header/header-list-body';
+@import 'components/header/header-list';
+@import 'components/choose-agent';
+@import 'components/choose-what-you-search';
+@import 'components/product-detail';
+@import 'components/product-list';
+@import 'components/promo-tag';
+
+
+//--Layouts
+@import 'layout/header';
+@import 'layout/footer';

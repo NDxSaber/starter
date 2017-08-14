@@ -8,7 +8,7 @@ import { createStore } from 'redux'
 import todoApp from './reducers'
 
 //--React Router
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 //--ServiceWorker
 import registerServiceWorker from './registerServiceWorker';

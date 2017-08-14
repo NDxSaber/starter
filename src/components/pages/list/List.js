@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
-import logo from '../../../assets/images/logo.svg';
+// import { Link } from 'react-router-dom';
+// import logo from '../../../assets/images/logo.svg';
 import './list.css';
 
 class List extends Component {
